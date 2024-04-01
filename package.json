@@ -29,5 +29,9 @@
     "gulp-uglify": "^3.0.2",
     "sass": "^1.72.0",
     "vinyl-ftp": "^0.6.1"
+  },
+  "dependencies": {
+    "hamburgers": "^1.2.1",
+    "jquery": "^3.7.1"
   }
 }
