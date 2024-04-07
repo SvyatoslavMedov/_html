@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "hamburgers": "^1.2.1",
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "owl.carousel": "^2.3.4"
   }
 }
