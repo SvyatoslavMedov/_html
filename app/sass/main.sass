@@ -301,13 +301,30 @@ html.mm-opened
 	background-color: rgba(#151515, .15)
 	font-weight: 300
 	font-size: 14px
-	color: #fff
 	.fa
 		margin-right: 5px
-		color: #fff
+		color: #555
 	>.container>.row>div:nth-child(2)
-		font-family: firasans
-		text-align: center	
+		font-family: firasans, sans-serif
+		text-align: center
+
+$colors: $blue, $red, $accent
+@for $i from 1 through length($colors)
+	.carousel-services .owl-item:nth-child(#{length($colors)}n+#{$i}),
+	.carousel-services-aside .owl-item:nth-child(#{length($colors)}n+#{$i})
+		background-color: nth($colors, $i)
+
+	
+.carousel-services 
+	&-item
+		color: #fff
+		font-size: 18px
+		font-weight: 300
+		position: relative
+		display: flex
+	 		
+
+// 5:25:00
 
 @import "media"  
 
