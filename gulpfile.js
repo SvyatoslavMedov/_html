@@ -33,7 +33,9 @@ function js() {
 	return src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/mmenu/js/jquery.mmenu.all.min.js',
+		'app/libs/equalHeights/equalHeights.js',
 		'app/libs/owl.carousel/owl.carousel.min.js',
+		'app/libs/fotorama/fotorama.js',
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
