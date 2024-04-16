@@ -114,6 +114,9 @@ section
 	background-color: #fff
 	&.inverse
 		color: #fff
+		background-color: $dark
+		&.s-call
+			background-color: #fff
 	h2
 		text-transform: uppercase
 		font-size: 30px
@@ -588,6 +591,92 @@ $colors: $blue, $red, $accent
 
 		opacity: .92
 
+.s
+	&-king, &-review, &-partners
+		padding: 5% 0
+		background-color: #151515
+		strong
+			color: $accent
+		p
+			margin: 30px 0
+	&-call
+		background-size: contain
+		background-repeat: no-repeat
+		background-color: #fff
+		background-position: 25%
+		&::before
+			content: ''
+			width: 50%
+			right: 0
+			position: absolute
+			height: 100%
+			background-color: rgba($accent, .92)
+	&-partners
+		&::before
+			background-color: #fff
+		h2
+			margin-top: 0
+			color: $accent
+
+.callback
+	padding: 25% 0
+	color: #fff
+	position: relative
+	input, textarea, select
+		color: #fff
+		width: 100%
+		margin-top: 17px
+
+		&::-webkit-input-placeholder
+			color: #fff
+			opacity: 1
+		&:-moz-placeholder
+			color: #fff
+			opacity: 1
+		&::-moz-placeholder
+			color: #fff
+			opacity: 1
+		&:-ms-input-placeholder
+			color: #fff
+
+		option
+			color: #222
+	button
+		margin-top: 40px
+	&-logo
+		img
+			width: 100px
+			height: auto
+	.formhead
+		margin-top: 0
+		line-height: 1.5
+		white-space: nowrap
+		margin-bottom: 0
+		font-size: 30px
+		text-transform: uppercase
+		font-weight: 800
+	p
+		margin-top: 0	
+				
+
+input, textarea, select
+	background-color: transparent
+	border: rgba(0,0,0,.1) 1px solid
+	border-bottom: rgba(0,0,0,.1) 2px solid
+	border-radius: 2px
+	padding: 8px 22px
+	outline: none
+	color: #333
+	display: inline-block
+	font-weight: 300
+	font-size: 16px
+select
+	padding: 11px 22px
+
+.success	
+	display: none	
+		
+
 .fotorama
 	background-color: rgba(#151515, .4)
 .fotorama__nav
@@ -611,7 +700,7 @@ $colors: $blue, $red, $accent
 	right: -1px
 .fotorama__arr
 	background: none
-.fotorama__arr-
+.fotorama__arr
 	&-next, &-prev
 		&::before
 			font-family: fontawesome
@@ -629,7 +718,7 @@ $colors: $blue, $red, $accent
 
 			
 
-
+//7:57:25
 // Всегда в конце
 @import media
 
