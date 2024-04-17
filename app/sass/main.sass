@@ -603,7 +603,7 @@ $colors: $blue, $red, $accent
 		background-size: contain
 		background-repeat: no-repeat
 		background-color: #fff
-		background-position: 25%
+		background-position: 10%
 		&::before
 			content: ''
 			width: 50%
@@ -673,9 +673,26 @@ input, textarea, select
 select
 	padding: 11px 22px
 
-.success	
-	display: none	
-		
+.success
+	display: none
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	text-transform: uppercase
+	font-weight: bold
+	z-index: 10
+	span
+		margin: auto
+	& ~ *
+		transition: all .5s ease	
+	&.active
+		& ~ *
+			opacity: .5
+			filter: blur(10px)
+
+			
 
 .fotorama
 	background-color: rgba(#151515, .4)
