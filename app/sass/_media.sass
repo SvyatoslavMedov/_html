@@ -36,14 +36,33 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	.header-contacts 
-		.phone-h
+	.header-contacts
+		>.container>.row>div:nth-child(2)
 			text-align: left
-	.button
-		padding: 12px 36px	
+	
+	.carousel-services-item
+		flex-direction: column
+
+	.welcome
+		h1
+			font-size: 45px
 
 	.quotes
-		display: none		
+		&::before, &::after
+			display: none
+
+	.partners.owl-carousel
+		.owl-nav
+			> div
+				&.owl-next
+					right: 0
+				&.owl-prev
+					left: 0
+
+	.s-partners
+		h2
+			margin: 0
+
 
 	
 

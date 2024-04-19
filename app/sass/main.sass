@@ -615,8 +615,9 @@ $colors: $blue, $red, $accent
 		&::before
 			background-color: #fff
 		h2
-			margin-top: 0
-			color: $accent
+			span
+				margin-top: 0
+				color: $accent
 
 .callback
 	padding: 25% 0
@@ -795,10 +796,120 @@ select
 		color: #a9a9a9
 		font-weight: 300
 
+.partners.owl-carousel
+	.partner
+		height: 100%
+		display: flex
+		margin: auto
+	.owl-stage
+		display: flex
+	.owl-item
+		margin-top: 30px
+		img
+			max-width: 100%
+			width: auto
+			display: inline-block
+			margin: auto
+	.owl-nav
+		position: absolute
+		top: 0
+		width: 100%
+		z-index: 2
+		> div
+			position: absolute
+			top: 50px
+			color: #999
+			font-size: 30px
+			transition: opacity .5s ease
+			padding: 0 10px
+			&:hover
+				opacity: .5
+			&.owl-next
+				right: -60px
+			&.owl-prev
+				left: -60px
+
+
+.main-footer
+	background-color: #242424
+	padding: 3% 0
+	color: #fff
+	font-size: 14px
+
+.footer-column
+	margin: 15px 0	
+	p
+		position: relative
+		font-size: 15px
+
+.logo-footer
+	width: 125px
+	height: auto
+	+ p
+		color: #666
+		padding: 0
+		margin:
+			bottom: 15px
+			top: 15px
+		font-size: 15px
+
+
+.social-footer
+	margin-top: 38px
+	.soc
+		li
+			display: inline-block
+			margin: 3px
+			a
+				color: #ABABAB	
+				margin-bottom: 0
+				transition: color .5s ease, background-color .5s ease
+				&:hover
+					color: rgba(#fff, .8)
+
+
+.footer-menu
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+		li.active
+			a
+				color: $accent
+				&::before
+					color: $accent
+		a
+			color: #979797
+			transition: color .25s ease
+			display: inline-block
+			padding: 4px 0
+			text-decoration: underline
+			padding-left: 20px
+			position: relative
+			&:hover, &:focus
+				color: $accent
+				&::before
+					color: $accent
+			&::before
+				position: absolute
+				left: 0
+				top: 6px
+				transition: color .25s ease
+				content: '\f219'
+				font-family: fontawesome
+				font-size: 12px	
+				color: #fff
+				transition: color .5s ease
+				margin-right: 12px
+
+
+				
+.footer-menu
+
 
 			
 
-//7:57:25
+//11:19:57
 // Всегда в конце
 @import media
 
