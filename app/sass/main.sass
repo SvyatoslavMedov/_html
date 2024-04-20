@@ -837,10 +837,30 @@ select
 	font-size: 14px
 
 .footer-column
-	margin: 15px 0	
+	margin: 15px 0
 	p
 		position: relative
 		font-size: 15px
+		padding-left: 20px
+		font-weight: 300
+		margin: 0 0 20px
+		.fa
+			position: absolute
+			left: 0
+			top: 5px
+			font-size: 16px
+			color: #797979
+	.footer-phone
+		font-size: 22px
+		font-family: firasans
+		padding-top: 10px
+		display: block
+		white-space: nowrap
+		.fa
+			top: 21px
+			font-size: 18px
+
+	
 
 .logo-footer
 	width: 125px
@@ -882,7 +902,7 @@ select
 			color: #979797
 			transition: color .25s ease
 			display: inline-block
-			padding: 4px 0
+			padding: 3.5px 0
 			text-decoration: underline
 			padding-left: 20px
 			position: relative
@@ -905,8 +925,50 @@ select
 
 				
 .footer-menu
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+		li.active
+			a
+				color: $accent
+				&::before
+					color: $accent
+		a
+			color: #979797
+			transition: color .25s ease
+			display: inline-block
+			padding: 4px 0
+			text-decoration: underline
+			padding-left: 20px
+			position: relative
+			&:hover, &:focus
+				color: $accent
+				&::before
+					color: $accent
+			&::before
+				position: absolute
+				left: 0
+				top: 6px
+				transition: color .25s ease
+				content: '\f219'
+				font-family: fontawesome
+				margin-right: 8px
+				font-size: 12px
+				color: #fff
+
+.map
+	max-height: 200px
+	opacity: .7
+	transition: opacity .5s ease
+	&:hover
+		opacity: 1
+		
 
 
+
+
+	
 			
 
 //11:19:57
