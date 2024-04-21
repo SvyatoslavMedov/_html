@@ -63,7 +63,10 @@ $(function() {
 		ths.html(ths.html().replace(/^(\S+)/, '<span>$1</span>'));
 	});
 
-	$('select').selectize();
+	$('select').selectize({
+		create: true,
+		sortField: 'text'
+	});
 
 
 	$('.reviews').owlCarousel({
@@ -96,8 +99,16 @@ $(function() {
 			}
 		}
 	});
-
-
+	$('.top').click(function() {
+		$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
+	});
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > $(window).height()) {
+			$('.top').addClass("active");
+		} else {
+			$('.top').removeClass("active");
+		};
+	});
 	
 
 	//E-mail Ajax Send
@@ -125,6 +136,9 @@ $(function() {
 	}onResize();
 	window.onresize = function() {onResize()}
 
-	
+
+	$(window).on('load', function() {
+		$('.preloader').delay(1000).fadeOut('slow');
+	});
 });
 
